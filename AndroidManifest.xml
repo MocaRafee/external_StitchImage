@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" android:sharedUserId="android.uid.system" package="com.asus.stitchimage" platformBuildVersionCode="29" platformBuildVersionName="10">
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="23" android:compileSdkVersionCodename="6.0-2438415" android:sharedUserId="android.uid.system" package="com.asus.stitchimage" platformBuildVersionCode="29" platformBuildVersionName="10">
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
@@ -35,7 +35,7 @@
             </intent-filter>
             <meta-data android:name="android.accessibilityservice" android:resource="@xml/accessibilityservice"/>
         </service>
-        <activity android:configChanges="orientation|screenSize" android:exported="false" android:launchMode="singleInstance" android:name="com.asus.stitchimage.editor.ScreenshotEditorActivity" android:theme="@style/EditorTheme"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="true" android:launchMode="singleInstance" android:name="com.asus.stitchimage.editor.ScreenshotEditorActivity" android:theme="@style/EditorTheme"/>
         <service android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
             <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
             <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>

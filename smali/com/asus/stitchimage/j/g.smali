@@ -892,15 +892,9 @@
 .method public static d(Landroid/content/ContentResolver;)I
     .locals 2
 
-    const-string v0, "screenshot_sound"
-
     const/4 v1, 0x0
 
-    invoke-static {p0, v0, v1}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result p0
-
-    return p0
+    return v1
 .end method
 
 .method private static d()Ljava/io/File;
