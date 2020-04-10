@@ -906,7 +906,7 @@
 
     move-result-object v1
 
-    const-string v2, "Screenshots"
+    const-string v2, "Pictures/Screenshots"
 
     invoke-direct {v0, v1, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
@@ -919,7 +919,7 @@
     return-object v0
 
     :cond_0
-    invoke-virtual {v0}, Ljava/io/File;->mkdir()Z
+    invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
     move-result v1
 
